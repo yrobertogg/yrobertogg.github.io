@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "Booter zero zero";
+    src: url(/fonts/BOOTERZZ.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Raleway;
+    color: #777;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* -----------------------------------------------------Header */
+.nav ul{
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    /* When we put inline-block it allow us that the paddig works as regular works even if we have inline elements this means with 1 number add that paddig to the top, botton, and righ and left. */
+    display: inline-block;
+    /* em It’s relative to the font size of its parent element 1em = 100% of the current font size*/
+    padding: .5em;
+    color: white;
+    /* The text decoration remove the underline underneath of our elements*/
+    text-decoration: none;
+}
+
+.main-nav{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
+}
+
+.main-nav li{
+    /* The 0 represents top and botton and the 5% is for left and right padding */
+    padding: 0 5%;
+}
+
+.nav a:hover{
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.main-header{
+    /* By default we only can use  background-color or background-image*/
+    background-color: rgba(24, 155, 239, 6);
+    background-image: url(/images/headerBackground.webp);
+    /* The background-blend-mode: help us to use both at the same time */
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding: 30px;
+}
+
+.band-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter zero zero";
+    /* The h1 elements by default are bolded, but with font-weight normal we got to have the original format of the font */
+    font-weight: normal;
+    color: white;
+}
+
+.band-name-large{
+    font-size: 9em;
+}
+
+/* ---------------------------------------------------------------Main */
+.content-section{
+    /* This margin 1em is going to give space in left, right, top, botton of or element */
+    margin: 1em;
+    /* This is going to mantain the size maximum 900px no more */
+    max-width: 900px;
+    /* The first number 0 is top and botton, the auto works to put same number to left and right and is going to put as much as we needed to left this one in the center. */
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+ .section-header{
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+ }
+
+ .about-band-image{
+    /* With the float left we got to stop follow the normal flow and be in the very left of the flow */
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+ }
+
+ /* ---------------------------------------------------------------Footer */
+ .main-footer{
+    background-color: rgba(24, 155, 239, 6);
+    background-image: url(/images/headerBackground.webp);
+    background-blend-mode: multiply;
+    /* background-color: #189bef; */
+    color: white;
+    padding: .25em 0;
+ }
+
+ .main-footer-container{
+    /* It turns an element into a flexible container, and its child elements become flexible items that you can easily align in a row or column */
+    display: flex;
+    align-items: center;
+    margin: 10px;
+ }
+
+ .main-footer-container ul{
+    /*  */
+    flex-grow: 1;
+    text-align: end;
+ }
+
+ .footer-nav li{
+    /* This paddig is to get some space around these elements */
+    padding: 0 .5em;
+ }
+/* If I want to give an spefic size to the img nav elements */
+ /* .footer-nav img{
+    width: 30px;
+    height: 30px;
+ } */
