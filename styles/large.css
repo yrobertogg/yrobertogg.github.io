@@ -127,9 +127,9 @@ html, body{
  }
 
  .main-footer-container ul{
-    /*  */
     flex-grow: 1;
     text-align: end;
+    margin-right: .8em;
  }
 
  .footer-nav li{
@@ -187,4 +187,201 @@ html, body{
     width: 63px;
     height: 63px;
     background-color: rgba(255, 255, 255, .0);
+ }
+
+ .tour-row{
+    border-bottom: 1px solid black;
+    /* The padding is the space between the content and the border */
+    padding-bottom: 1em;
+    /* The margin is the space outside the border */
+    margin: 1em;
+ }
+
+ /* This is the way to only affect the last child of the element section */
+ .tour-row:last-child{
+    border-bottom: none;
+ }
+
+ .tour-item{
+    /* This display the element inline but with the caracteristics of a block element */
+    display: inline-block;
+    padding-right: .5em;
+ }
+
+ .tour-date{
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+ }
+
+ .tour-city{
+    width: 24%;
+ }
+
+ .tour-arena{
+    width: 42%;
+ }
+
+ .tour-btn{
+    max-width: 19%;
+ }
+
+ .btn-primary{
+    color: white;
+    background-color: #1A8B98;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+ }
+
+ .btn-primary:hover{
+    background-color: #045AC8;
+ }
+
+ /* ------------------------------------------------------Store stayling */
+
+ .shop-item{
+    /* This is to make some space between the elements */
+    margin: 30px;
+ }
+
+ .shop-item-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+ }
+
+ .shop-item-image{
+    height: 250px;
+    width: 250px;
+ }
+
+ .shop-item-details{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+ }
+
+ .shop-item-price{
+    flex-grow: 1;
+    color: #333;
+ }
+
+ .shop-items{
+    display: flex;
+    /* This property works that when the screen is less width it wraps */
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+
+ .cart-header{
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+ }
+
+ .cart-column{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+ }
+
+ .cart-row{
+    display: flex;
+ }
+
+ .cart-item{
+    width: 45%;
+ }
+
+ .cart-price{
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+ }
+
+ .cart-quantity{
+    width: 35%;
+ }
+
+ .cart-item-title{
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+ }
+
+ .cart-item-image{
+    width: 75px;
+    /* To ajust automatically the height of the picture and make it a perfect square */
+    height: auto;
+    /* To round the corners of the image */
+    border-radius: 5px;
+    border: 2px solid #1A8B98;
+ }
+
+ .btn-danger{
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+ }
+
+ .btn-danger:hover{
+    background-color: #CC4C4C;
+ }
+
+ .cart-quantity-input{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 2px solid #1A8B98;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+
+
+ }
+
+ .cart-row:last-child{
+    border-bottom: 2px solid black;
+ }
+
+  .cart-row:last-child .cart-column{
+    border-bottom: none;
+ }
+
+ .cart-total{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+
+ }
+
+ .cart-total-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+ }
+
+ .cart-total-price{
+    color: #333;
+    font-size: 1.1em;
+ }
+
+ .btn-purchase{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
  }
